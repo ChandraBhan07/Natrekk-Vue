@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .theme-gradient {
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(125, 213, 111, 0.85),
+      rgba(40, 180, 135, 0.85)
+    );
+  }
+
+  .theme-gradient-dark {
+    background-image: linear-gradient(to right bottom, #7dd56f, #28b487);
+  }
+
+  .minw-input {
+    min-width: 35rem;
+  }
+
+  .treks-mw {
+    max-width: 315px;
+  }
+
+  .treks-clip-path {
+    clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 98%);
+  }
+
+  .treks-text-grad {
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(125, 213, 111, 0.85),
+      rgba(40, 180, 135, 0.85)
+    );
+  }
+
+  .treks-img-overlay {
+    background-image: linear-gradient(to right bottom, #7dd56f, #28b487);
+  }
+
+  /* trek page */
+
+  .h-128 {
+    height: 30rem;
+  }
+
+  .trek-min-max-w {
+    min-width: 300px;
+    max-width: 30px;
+  }
+
+  .trek-img-clip-path {
+    clip-path: polygon(0 17%, 100% 0%, 100% 83%, 0% 100%);
+  }
+
+  .trek-map-clip-path {
+    clip-path: polygon(0 11%, 100% 0%, 100% 89%, 0% 100%);
+  }
+
+  .trek-review-clip-path {
+    clip-path: polygon(0 10%, 100% 2%, 100% 90%, 0% 99%);
+  }
+
+  .marker {
+    background-image: url("../img/pin.png");
+    background-size: cover;
+    width: 32px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .review-ratings-inner:hover {
+    text-shadow: 0 0 1px #55c57a, 0 0 8px #7dd56f;
+  }
+
+  .review-ratings::before,
+  .review-ratings-inner::before {
+    content: "\f006 \f006 \f006 \f006 \f006";
+    font-family: fontAwesome;
+    font-size: 22px;
+  }
+  .review-ratings::before {
+    color: #ddd;
+  }
+
+  .review-ratings-inner::before {
+    color: #55c57a;
+  }
+
+  /* about us */
+  .about-background {
+    background-image: url("../img/about-background.jpg");
+  }
+}
